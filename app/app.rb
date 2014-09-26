@@ -10,7 +10,7 @@ class UploaderApp < Sinatra::Base
   register Sinatra::ActiveRecordExtension
 
   get '/' do
-    'Hello!'
+    erb :index
   end
 
 end
