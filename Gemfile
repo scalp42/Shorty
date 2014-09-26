@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-# Universal Gems
+# --- Universal Gems {{{
+
 gem 'sinatra', require: 'sinatra/base'
 
 # A simple, serverless database
@@ -12,7 +13,10 @@ gem 'sinatra-activerecord', require: 'sinatra/activerecord'
 # Toolset for dealing with data tasks, migrations etc
 gem 'rake'
 
-# Development Gems
+# --- }}}
+
+# --- Development Gems {{{
+
 group :development do
 
   # Faster/lighter web server than Web Brick
@@ -25,3 +29,5 @@ group :development do
   gem 'shotgun'
 
 end
+
+# --- }}}
