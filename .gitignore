@@ -1,0 +1,48 @@
+# Windows
+$RECYCLE.BIN/
+
+# OSX
+.DS_Store
+.Trashes
+.Spotlight-V100
+
+# Databases
+*.db
+
+# Binaries
+*.out
+*.exe
+*.o
+*.bin
+*.dylib
+*.lib
+*.a
+*.so
+*.dat
+
+# Build Folders
+bin/
+obj/
+build/
+dist/
+
+# Kivy
+.buildozer/
+
+# Node
+node_modules/
+
+# Logs
+*.log
+
+# Python
+*.pyc
+*.pyo
+__init__.py
+
+# Vim
+*.swp
+*~
+
+# Ctags
+tags
