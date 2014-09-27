@@ -14,14 +14,13 @@ class UploaderApp < Sinatra::Base
   end
 
   get '/:token/?' do
+    @url = Url.find_by_token(params[:token])
 
-    redirect("https://www.google.com", 303)
-  end
-
-  post '/urls/?' do
-    @url = "localhost:9393/#{params[:url]}"
-
-    erb :results, locals: { url: @url }
+    redirect(@url.full_uri, 303)
   end
 
 end
+
+# Load all dependent code
+Dir[File.expand_path("../models/*.rb", __FILE__)].sort.each{|file| require file}
+Dir[File.expand_path("../routes/*.rb", __FILE__)].sort.each{|file| require file}
