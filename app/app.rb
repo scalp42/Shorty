@@ -13,4 +13,15 @@ class UploaderApp < Sinatra::Base
     erb :index
   end
 
+  get '/:token/?' do
+
+    redirect("https://www.google.com", 303)
+  end
+
+  post '/urls/?' do
+    @url = "localhost:9393/#{params[:url]}"
+
+    erb :results, locals: { url: @url }
+  end
+
 end
