@@ -8,14 +8,6 @@ class Url < ActiveRecord::Base
   before_create :generate_token
   # --- }}}
 
-  # --- Public Methods {{{
-  public
-
-  def short_uri()
-    "localhost:9393/#{token}"
-  end
-  # --- }}}
-
   # --- Private Methods {{{
   private
 
