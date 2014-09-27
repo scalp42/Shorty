@@ -9,10 +9,12 @@ Bundler.require(:default, ENV['RACK_ENV'].to_sym)
 class UploaderApp < Sinatra::Base
   register Sinatra::ActiveRecordExtension
 
-  get '/' do
+  # Load 'homepage'
+  get '/?' do
     erb :index
   end
 
+  # Fetches the original URL via the short token and redirects the client
   get '/:token/?' do
     @url = Url.find_by_token(params[:token])
 
