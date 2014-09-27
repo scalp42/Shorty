@@ -1,4 +1,4 @@
-class UploaderApp < Sinatra::Base
+class ShortyApp < Sinatra::Base
 
   # Creates a new shortened URL
   post '/urls/?' do
