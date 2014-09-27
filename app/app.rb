@@ -10,13 +10,15 @@ class UploaderApp < Sinatra::Base
   register Sinatra::ActiveRecordExtension
 
   # Load 'homepage'
-  get '/?' do
+  get '/' do
     erb :index
   end
 
   # Fetches the original URL via the short token and redirects the client
   get '/:token/?' do
     @url = Url.find_by_token(params[:token])
+
+    @url.increment_views()
 
     redirect(@url.full_uri, 303)
   end

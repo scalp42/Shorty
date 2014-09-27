@@ -8,6 +8,14 @@ class Url < ActiveRecord::Base
   before_create :generate_token
   # --- }}}
 
+  # --- Public Views {{{
+  def increment_views()
+    self.views += 1
+    self.save
+    self
+  end
+  # --- }}}
+
   # --- Private Methods {{{
   private
 
