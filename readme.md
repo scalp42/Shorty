@@ -8,9 +8,13 @@ The purpose of this application was rather simple and straight forward:
 
 1. Create a simple, modular Sinatra application
 2. Demonstrate how to structure a modular application using multiple folders
-3. Demonstrate how to wire up non-trivial components (a database)
+3. Demonstrate how to wire up non-trivial components (a database, migrations etc)
 4. Demonstrate how to do simple views/layouts with Sinatra and Erb
-5. Keep the code small/simple so a single developer can consume it easily
+5. Demonstrate how to do validations/methods within an ORM model
+6. Keep the code small/simple so a single developer can consume it easily
+
+![alt text](github-snapshots/1.png "Index page for Shorty")
+![alt text](github-snapshots/2.png "Shortened URL using Shorty")
 
 Instructions
 ------------
@@ -44,6 +48,7 @@ There's plenty left to do with the application for instance:
 
 1. Unit tests
 2. Error checking/handling
+3. Make the site look nice, add styles, features etc
 
 License
 -------
