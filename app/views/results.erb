@@ -2,6 +2,7 @@
     <h1>Below you can find your short URL</h1>
     <br>
     <div align="center">
-        <%= @short_uri %>
+        <!-- HACK: Have to add http:// for localhost.. -->
+        <a href="http://<%= @short_uri %>" target="_blank"> <%= @short_uri %></a>
     </div>
 </div>
