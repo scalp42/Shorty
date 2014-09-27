@@ -13,8 +13,8 @@ The purpose of this application was rather simple and straight forward:
 5. Demonstrate how to do validations/methods within an ORM model
 6. Keep the code small/simple so a single developer can consume it easily
 
-![alt text](github-snapshots/snapshot-1.png "Index page for Shorty")
-![alt text](github-snapshots/snapshot-2.png "Shortened URL using Shorty")
+![alt text](github-snapshots/screenshot-1.png "Index page for Shorty")
+![alt text](github-snapshots/screenshot-2.png "Shortened URL using Shorty")
 
 Instructions
 ------------
