@@ -7,7 +7,7 @@ class ShortyApp < Sinatra::Base
 
     @short_uri = "#{request.host_with_port}/#{@url.token}"
 
-    erb :results, locals: { short_uri: @short_uri }
+    erb :results
   end
 
 end
